@@ -1,12 +1,11 @@
 package com.devsuperior.dslist.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.util.Objects;
 
+@Entity
+@Table(name="tb_game")
 public class Game {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
